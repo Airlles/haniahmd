@@ -1,0 +1,376 @@
+/* This sets the default margin, padding, and font-family for all elements */
+*{ 
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+/*---------------------Main-----------------*/
+
+/* This sets the header section to take up the full height and width of the viewport */
+.header{    
+    min-height: 100vh;
+    width: 100%;
+    /* This sets the background image to a gradient overlay and a GIF */
+    background-image: linear-gradient(rgba(10,20,41,0.75),rgba(10,20,41,0.75)),url(images/temp2.gif);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* This styles the navigation bar */
+nav{    
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* This sets the logo image width */
+nav img{
+    width: 150px;
+}
+
+/* This styles the navigation links */
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+/* This styles the individual navigation link items */
+.nav-links ul.header1 li{    
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+/* This styles the anchor tag for each navigation link */
+.nav-links ul.header1 li a{
+    color: #8087ff;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+/* This adds a hover effect for each navigation link */
+.nav-links ul.header1 li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fb6f92;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+/* This expands the hover effect for each navigation link */
+.nav-links ul li:hover::after{
+    width: 100%;    
+}
+
+/* This styles the text box in the header section */
+.text-box{
+    width: 90%;
+    color: #cccfff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+/* This styles the heading in the text box */
+.text-box h1 {
+    color: #cccfff;
+    font-size: 62px;  
+}
+
+/* This styles the paragraph in the text box */
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 30px;
+    color: #cccfff;
+}
+
+/* This hides the Font Awesome icons in the navigation bar */
+nav .fa{
+    display: none;
+}
+
+
+/* Styles for the footer */
+.footer{
+    position: fixed; /* position the footer fixed at the bottom */
+    width: 100%; /* full width of the viewport */
+    text-align: center; /* center align text */
+    padding: 30px 0; /* padding top and bottom */
+    color: #cccfff; /* color of the text */
+    bottom: 0; /* position at the bottom */
+}
+
+/* Styles for the h4 element within the footer */
+.footer h4{
+    margin-bottom: 15px; /* margin bottom */
+    margin-top: 20px; /* margin top */
+    font-weight: 600; /* font weight */
+    color: #cccfff; /* color of the text */
+    font-size: 20px; /* font size */
+}
+
+/* Styles for font awesome icon elements within the footer */
+.icons .fa{
+    color: #fecce8; /* color of the icon */
+    margin: 0 10px; /* margin left and right */
+    cursor: pointer; /* change cursor on hover to indicate it is clickable */
+    padding: 0px 0; /* padding around the icon */
+}
+
+/* Styles for specific font awesome icons within the footer */
+.fa-bolt{
+    color: #fecce8; /* color of the icon */
+}
+
+/* Styles for the first unordered list within the footer */
+ul.footer1 {
+    display: flex; /* display as a flexbox */
+    list-style: none; /* remove list bullet points */
+    margin: 0; /* remove margin */
+    padding: 0; /* remove padding */
+    justify-content: center; /* center justify content */
+    align-items: center; /* center align items */
+}
+
+
+/* This CSS code is for styling a website layout */
+
+/* Styles for elements with a class of 'text-box' and an h1 heading element */
+@media(max-width: 700px) {  
+    
+    .header {
+    background-image: linear-gradient(rgba(10,20,41,0.75),rgba(10,20,41,0.75)),url(images/temp2.gif);
+    background-size: cover;
+    background-position: center center;
+    height: auto; /* Change fixed height to auto */
+    position: relative;
+}
+    .text-box {
+    margin-bottom: 50px;
+}
+
+    .text-box h1 {
+        font-size: 30px; /* decrease font size to 20px on smaller screens */
+    }
+    
+    /* Styles for navigation links with a list element */
+    .nav-links ul li{
+        display: block; /* display list items as blocks */
+    }
+    
+    /* Styles for the navigation links container */
+    .nav-links{
+        position: absolute; /* position the container absolutely */
+        background: #cccfff; /* background color */
+        height: 100vh; /* full height of the viewport */
+        width: 200px; /* width of the container */
+        top: 0; /* position at the top */
+        right: -200px; /* initially offscreen to the right */
+        text-align: left; /* align text to the left */
+        z-index: 2; /* make sure the container appears above other elements */
+        transition: 1s; /* animate the transition */
+    }
+    
+    /* Styles for font awesome icon elements within the navigation */
+    nav .fa{
+        display: block; /* display icons as blocks */
+        color: #fff; /* color of the icon */
+        margin: 10px; /* margin around the icon */
+        font-size: 22px; /* font size of the icon */
+        cursor: pointer; /* change cursor on hover to indicate it is clickable */
+    }
+    
+    /* Styles for the unordered list within the navigation */
+    .nav-links ul {
+        padding: 30px; /* padding around the list */
+    }
+    .footer{
+        position: relative;
+        margin-top: 700px;
+        padding: 20psx 0;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer h4 {
+        font-size: 18px; /* Decrease font size for smaller screens */
+    }
+    .icons .fa{
+        font-size: 18px;
+        margin: 0 5px;
+    }
+    u1.footer1{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+.about {
+    
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    color: #CCCFFF;
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+ color: #cccfff;
+ font-size: 20px;   
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.about-me{
+    flex-basis: 31%;
+    background:  #000000;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #0096FF;
+    font-size: 25px;
+
+}
+.about-me:hover{
+    box-shadow: 0 0 20px 0px rgba(204, 207, 255, 1);
+}
+
+  @media (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+    .about-me {
+        flex-basis: 100%;
+        margin-bottom: 10%;
+    }
+    .footer {
+        position: static;
+        margin-top: 10%;
+    }
+}
+
+/*---------------------PROJECTS-----------------*/
+.projects {
+    
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    color: #CCCFFF;
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+ color: #cccfff;
+ font-size: 20px;   
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.projects-completed{
+    flex-basis: 31%;
+    background:  #000000;
+    border-radius: 10px;
+    margin-bottom: 1%;
+    padding: 0px 12px;
+    box-sizing: border-box;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #e75480;
+    font-size: 25px;
+
+}
+.projects-completed:hover{
+    box-shadow: 0 0 20px 0px rgba(204, 207, 255, 20);
+}
+
+/* Styles for the footer */
+.footer2{
+    position: relative; /* position the footer fixed at the bottom */
+    width: 100%; /* full width of the viewport */
+    text-align: center; /* center align text */
+    padding: 30px 0; /* padding top and bottom */
+    color: #cccfff; /* color of the text */
+    bottom: 0; /* position at the bottom */
+}
+
+/* Styles for the h4 element within the footer */
+.footer h4{
+    margin-bottom: 15px; /* margin bottom */
+    margin-top: 20px; /* margin top */
+    font-weight: 600; /* font weight */
+    color: #cccfff; /* color of the text */
+    font-size: 20px; /* font size */
+}
+
+/* Styles for font awesome icon elements within the footer */
+.icons .fa{
+    color: #fecce8; /* color of the icon */
+    margin: 0 10px; /* margin left and right */
+    cursor: pointer; /* change cursor on hover to indicate it is clickable */
+    padding: 0px 0; /* padding around the icon */
+}
+
+/* Styles for specific font awesome icons within the footer */
+.fa-bolt{
+    color: #fecce8; /* color of the icon */
+}
+
+/* Styles for the first unordered list within the footer */
+ul.footer1 {
+    display: flex; /* display as a flexbox */
+    list-style: none; /* remove list bullet points */
+    margin: 0; /* remove margin */
+    padding: 0; /* remove padding */
+    justify-content: center; /* center justify content */
+    align-items: center; /* center align items */
+}
+
+.resume{
+    
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+h1{
+ color: #cccfff;
+ font-size: 62px;     
+    
+}

@@ -1,0 +1,112 @@
+<!-- Declares the document type as HTML -->
+<!DOCTYPE html>
+<!-- Begins the HTML document -->
+<html>
+<head>
+    <!-- Sets the viewport width to the device width and scales the page to 1.0x -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sets the title of the document -->
+    <title>Hani's Website</title>
+    <!-- Links the stylesheet to the document -->
+    <link rel="stylesheet" href="style2.css">
+    
+    <!-- Links to the Google Fonts website and requests permission to use the service -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Links to various fonts from the Google Fonts library -->
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Josefin+Sans&family=Kalam&family=Kanit&family=Pacifico&display=swap" rel="stylesheet">
+    
+    <!-- Links to the Font Awesome CSS library hosted on a CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    
+<body>
+    
+    <!-- Begins the header section of the website -->
+    <section class="header">
+    
+        <!-- Begins the navigation bar -->
+        <nav>
+            <!-- Links to the homepage of the website -->
+            <a href="indexv2.html"><img src="images/logo4.gif"></a>
+            <!-- Defines the navigation links -->
+            <div class="nav-links" id="navLinks">
+                <!-- Creates an icon to close the navigation menu -->
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <!-- Defines the list of navigation links -->
+                <ul class ="header1">
+                    <li><a href="indexv2.html">HOME</a></li>
+                    <li><a href="aboutv2.html">ABOUT</a></li>
+                    <li><a href="projectsv2.html">PROJECTS</a></li>
+                    <li><a href="resumev2.html">RESUME</a></li>
+                    
+                </ul>
+            </div>
+            <!-- Creates an icon to open the navigation menu -->
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+     <!------------PROJECTS----------->
+    <section class="projects">
+    <h1>Projects</h1>
+    
+    <div class="row">
+        
+    <div class = "projects-completed">
+      <h3>Space Invaders | Java</h3>  
+    <p>Developed a user interface that was intuitive and responsive to player input, resulting in a seamless gaming experience.
+Utilized sound and graphics to enhance gameplay, resulting in a visually engaging and immersive experience for players.</p>
+    </div> 
+        
+    <div class = "projects-completed">
+    <h3>3D Fidget Ring | Fusion 360</h3>  
+    <p>Designed and prototyped a fully functional fidget ring using CAD software and 3D printing technology, showcasing proficiency in both design and fabrication.</p>
+    </div>
+        
+    <div class = "projects-completed">
+    <h3>Text Based Maze Game | Java</h3>  
+    <p>Developed a text-based game engine using Java that allows for easy game creation and customization while providing a streamlined user experience.</p>
+    </div>
+        
+    </div>
+    </section>
+    
+        
+        
+        <!-- Creates the footer section of the website -->
+        <div class="footer">
+            <!-- Defines the purpose of the website -->
+            <h4>Websites Purpose:</h4>
+            <p>I created this website to provide information about myself and showcase my skills in web development.<br> I hope you find it enjoyable and informative.</p>
+       
+            <!-- Creates a list of icons linking to the creator's social media pages -->
+            <div class="icons">
+                <ul class="footer1">
+                    <li><a href="https://twitter.com/haniahmd004"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://github.com/Airlles"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/haniahmd/"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://replit.com/@HaniAhmed4"><i class="fa fa-code"></i></a></li>    
+                </ul>
+            </div>
+        <p>Made with <i class="fa fa-bolt"></i> by Hani Ahmed</p>   
+    </div>
+    </section>
+    
+    
+   <!---------Javascript for Toggle Menu-----------> 
+    <script>
+        
+        var navLinks = document.getElementById("navLinks");
+        
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+    
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+</html>
