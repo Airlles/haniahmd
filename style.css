@@ -374,3 +374,37 @@ h1{
  font-size: 62px;     
     
 }
+
+/* Styles for the footer */
+.footer-for-main{
+    position: fixed; /* position the footer fixed at the bottom */
+    width: 100%; /* full width of the viewport */
+    text-align: center; /* center align text */
+    padding: 30px 0; /* padding top and bottom */
+    color: #cccfff; /* color of the text */
+    bottom: 0; /* position at the bottom */
+}
+
+/* Styles for the h4 element within the footer */
+.footer-for-main h4{
+    margin-bottom: 15px; /* margin bottom */
+    margin-top: 20px; /* margin top */
+    font-weight: 600; /* font weight */
+    color: #cccfff; /* color of the text */
+    font-size: 20px; /* font size */
+}
+
+@media (max-width: 700px) {
+    .footer-for-main {
+        bottom: auto;
+        margin-top: 600px;
+        position: relative;
+    }
+    
+    .footer-for-main h4{
+        bottom: auto;
+        margin-top: 15px;
+        position: relative;
+    }
+}
+
