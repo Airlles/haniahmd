@@ -12,7 +12,7 @@
     min-height: 100vh;
     width: 100%;
     /* This sets the background image to a gradient overlay and a GIF */
-    background-image: linear-gradient(rgba(10,20,41,0.75),rgba(10,20,41,0.75)),url(images/temp2.gif);
+    background-image: linear-gradient(rgba(10,20,41,0.75),rgba(10,20,41,0.75)),url(temp2.gif);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -147,7 +147,7 @@ ul.footer1 {
 @media(max-width: 700px) {  
     
     .header {
-    background-image: linear-gradient(rgba(10,20,41,0.75),rgba(10,20,41,0.75)),url(images/temp2.gif);
+    background-image: linear-gradient(rgba(10,20,41,0.75),rgba(10,20,41,0.75)),url(temp2.gif);
     background-size: cover;
     background-position: center center;
     height: auto; /* Change fixed height to auto */
